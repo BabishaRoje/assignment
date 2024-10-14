@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout without Header and Footer</title>
+    <style>
+        body {
+           
+            margin: 0;
+            display: grid;
+            grid-template-columns: 200px 1fr; 
+            height: 100vh;
+        }
+
+        nav {
+            background-color: #333; 
+            color: white;
+            padding: 15px;
+        }
+
+        main {
+            background-color: #09748f; 
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-column: 1; 
+        }
+
+        .content {
+            flex: 1; 
+            padding: 50px;
+           background-color: #9ac8ee; 
+            border-radius:5px;
+            margin-right: 50%;
+            margin-left: 10px;
+        }
+        .content1 {
+            flex: 1; 
+            padding: 180px;
+            margin: 10px;
+            background-color: #324351; 
+            border-radius:5px;
+            width: 800px;
+
+
+        }
+        .aaa{
+            background-color: #333; 
+             padding: 40px;
+             border-radius:5px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                grid-template-columns: 1fr; 
+            }
+
+            nav {
+                grid-column: 1;
+            }
+
+            main {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        </nav>
+    <main> <div class="content">
+     
+
+    </div> <div class="content1">
+        
+         </div>
+
+
+        <div class="aaa"></div>
+      
+        
+        
+    </main>
+</body>
+</html>
